@@ -1,18 +1,17 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Home</h1>
+    <a @click="login()">Login with Google</a>
+    <br>
+    <a @click="logout()">Logout</a>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import { mapActions } from 'vuex'
 
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  name: 'home',
+  methods: mapActions('auth', ['login', 'logout'])
 }
 </script>
