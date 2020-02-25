@@ -1,0 +1,32 @@
+// text colors
+$text-dark: #4F4F4F;
+$text-light: #C9CBD8;
+$text-blue: #5C96C9;
+$text-green: #248F3C;
+$text-red: #F57979;
+$text-yellow: #CE7913;
+
+// bg colors
+$bg-dark: linear-gradient(356.96deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #4F4F4F;
+$bg-light: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+$bg-blue: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #5C96C9;
+$bg-green: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #A6DFB2;
+$bg-red: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #F67A7A;
+$bg-yellow: linear-gradient(317.7deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #FFD09A;
+
+// shadows
+$shadow-normal: 10px 10px 20px #A6ABBD, -10px -10px 20px #FAFBFF;
+$shadow-normal-hover: 20px 20px 40px #A6ABBD, -20px -20px 40px #FAFBFF;
+$shadow-minimal: 5px 5px 10px #A6ABBD, -5px -5px 10px #FAFBFF;
+$shadow-active: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 5px 5px 10px #A6ABBD, inset -5px -5px 10px #FAFBFF;
+$shadow-active-hover: inset 10px 10px 20px #A6ABBD, inset -10px -10px 20px #FAFBFF;
+$shadow-dark-normal: 10px 10px 20px #090909, -10px -10px 20px #6D6D6D;
+$shadow-dark-minimal: 5px 5px 10px #090909, -5px -5px 10px #6D6D6D;
+$shadow-icon: 2px 2px 2px rgba(0, 0, 0, 0.25);
+
+// border radius
+$radius-50: 50%;
+$radius-big: 50px;
+$radius-normal: 20px;
+$radius-small: 10px;
+$radius-decor-small: 5px;
