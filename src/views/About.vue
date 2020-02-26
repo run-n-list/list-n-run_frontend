@@ -6,6 +6,6 @@
 
 <style lang="scss">
 h1 {
-  color: $bg;
+  color: $bg-dark;
 }
 </style>
