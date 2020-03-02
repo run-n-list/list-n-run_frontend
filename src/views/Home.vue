@@ -1,10 +1,9 @@
-<template>
-  <div class="home">
-    <h1>Home</h1>
-    <a @click="login()">Login with Google</a>
+<template lang="pug">
+  div.home
+    h1.title.visually-hidden Home
+    a(@click="login()") Login with Google
     <br>
-    <a @click="logout()">Logout</a>
-  </div>
+    a(@click="logout()") Logout
 </template>
 
 <script>
@@ -15,3 +14,7 @@ export default {
   methods: mapActions('auth', ['login', 'logout'])
 }
 </script>
+
+<style lang="scss">
+
+</style>

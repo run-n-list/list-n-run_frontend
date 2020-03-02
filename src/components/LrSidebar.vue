@@ -25,14 +25,14 @@
       .section-sidebar__statistic.statistic
         ul.statistic__list
           li.statistic__item
-            span.statistic__text Неделя:
-            span.statistic__bar  Progress
+            span.statistic__text Неделя:  1  |  2  |  3  |  4  |  5  |  6
+            progress(max="100", value="100").statistic__bar
           li.statistic__item
-            span.statistic__text Месяц:
-            span.statistic__bar  Progress
+            span.statistic__text Месяц:  1  |  2  |  3  |  4  |  5  |  6
+            progress(max="100", value="100").statistic__bar
           li.statistic__item
-            span.statistic__text Год:
-            span.statistic__bar  Progress
+            span.statistic__text Год:  1  |  2  |  3  |  4  |  5  |  6
+            progress(max="100", value="100").statistic__bar
 </template>
 <script>
 
@@ -64,6 +64,7 @@ export default {
 .section-sidebar__menu {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .menu__list {
@@ -98,6 +99,10 @@ export default {
   height: 20px;
 }
 
+.menu__link {
+  width: 80%;
+}
+
 .section-sidebar__statistic {
   padding: 0;
   margin: 0;
@@ -124,7 +129,12 @@ export default {
   color: #4F4F4F;
 }
 
+.statistic__text {
+  width: 100%;
+}
+
 .statistic__bar {
+  width: 100%;
   margin-top: 8px;
 }
 

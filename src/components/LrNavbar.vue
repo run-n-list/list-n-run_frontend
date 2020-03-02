@@ -12,6 +12,21 @@
             button.btn__info Уведомления
           li.buttons__item-userpic
             button.btn__userpic Юзерпик
+            .btn__dropdown
+              ul.btn__dropdown-list
+                li.btn__dropdown-item
+                  img.btn__dropdown-svg
+                  span.btn__dropdown-text Профиль
+                li.btn__dropdown-item
+                  img.btn__dropdown-svg
+                  span.btn__dropdown-text Настройки
+                li.btn__dropdown-item
+                  img.btn__dropdown-svg
+                  span.btn__dropdown-text Выход
+                li.btn__dropdown-item
+                  img.btn__dropdown-svg
+                  img.btn__dropdown-svg
+                  img.btn__dropdown-svg
 
 </template>
 <script>
@@ -94,6 +109,75 @@ export default {
   background-blend-mode: soft-light, normal;
   box-shadow: 10px 10px 20px #A6ABBD, -10px -10px 20px #FAFBFF;
   border-radius: 50px;
+  border: .5px solid transparent;
+  cursor: pointer;
+}
+
+.buttons__item-userpic {
+  position: relative;
+}
+
+.btn__dropdown {
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 87px;
+  padding-left: 20px;
+  padding-right: 56px;
+  padding-top: 53px;
+  padding-bottom: 41px;
+  background: linear-gradient(319.53deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
+  background-blend-mode: soft-light, normal;
+  box-shadow: 10px 10px 20px #A6ABBD, -10px -10px 20px #FAFBFF;
+  border-radius: 50px;
+  transition: all 0.5s ease;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+.btn__dropdown::before {
+  content: '';
+  position: absolute;
+  display: block;
+  bottom: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: transparent;
+}
+
+.buttons__item-userpic:hover .btn__dropdown {
+  display: block;
+}
+
+.btn__dropdown-list{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn__dropdown-item {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.btn__dropdown-text {
+  width: 80%;
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #4F4F4F;
+  text-align: left;
+}
+
+.btn__dropdown-svg {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
 }
 
 </style>
