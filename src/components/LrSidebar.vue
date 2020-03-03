@@ -1,38 +1,40 @@
 <template lang="pug">
-  section.section-sidebar
-    h2.section-sidebar__title.visually-hidden Sidebar
-    .section-sidebar__wrapper.wrapper
-      .section-sidebar__menu.menu
-        ul.menu__list
-          li.menu__item
-            img.menu__svg
-            a(src="#").menu__link Задачи
-          li.menu__item
-            img.menu__svg
-            a(src="#").menu__link Проекты
-          li.menu__item
-            img.menu__svg
-            a(src="#").menu__link Заметки
-          li.menu__item
-            img.menu__svg
-            a(src="#").menu__link Лента
-          li.menu__item
-            img.menu__svg
-            a(src="#").menu__link Статистика
-          li.menu__item
-            img.menu__svg
-            a(src="#").menu__link Диалоги
-      .section-sidebar__statistic.statistic
-        ul.statistic__list
-          li.statistic__item
-            span.statistic__text Неделя:  1  |  2  |  3  |  4  |  5  |  6
-            progress(max="100", value="100").statistic__bar
-          li.statistic__item
-            span.statistic__text Месяц:  1  |  2  |  3  |  4  |  5  |  6
-            progress(max="100", value="100").statistic__bar
-          li.statistic__item
-            span.statistic__text Год:  1  |  2  |  3  |  4  |  5  |  6
-            progress(max="100", value="100").statistic__bar
+  aside.main-sidebar
+    ul.main-sidebar__menu.sidebar-menu
+      li.sidebar-menu__item
+        a(src="#").sidebar-menu__link.sidebar-menu__link--active
+          img.sidebar-menu__svg
+          span.sidebar-menu__text Задачи
+      li.sidebar-menu__item
+        a(src="#").sidebar-menu__link
+          img.sidebar-menu__svg
+          span.sidebar-menu__text Проекты
+      li.sidebar-menu__item
+        a(src="#").sidebar-menu__link
+          img.sidebar-menu__svg
+          span.sidebar-menu__text Заметки
+      li.sidebar-menu__item
+        a(src="#").sidebar-menu__link
+          img.sidebar-menu__svg
+          span.sidebar-menu__text Лента
+      li.sidebar-menu__item
+        a(src="#").sidebar-menu__link
+          img.sidebar-menu__svg
+          span.sidebar-menu__text Статистика
+      li.sidebar-menu__item
+        a(src="#").sidebar-menu__link
+          img.sidebar-menu__svg
+          span.sidebar-menu__text Диалоги
+    ul.main-sidebar__statistic.sidebar-statistic
+      li.sidebar-statistic__item
+        span.sidebar-statistic__text Неделя:  1  |  2  |  3  |  4  |  5  |  6
+        .sidebar-statistic__bar(max="100", value="100")
+      li.sidebar-statistic__item
+        span.sidebar-statistic__text Месяц:  1  |  2  |  3  |  4  |  5  |  6
+        .sidebar-statistic__bar(max="100", value="100")
+      li.sidebar-statistic__item
+        span.sidebar-statistic__text Год:  1  |  2  |  3  |  4  |  5  |  6
+        .sidebar-statistic__bar(max="100", value="100")
 </template>
 <script>
 
@@ -41,101 +43,67 @@ export default {
 }
 </script>
 <style lang="scss">
-.section-sidebar {
-  width: 30%;
-  padding-top: 28px;
-  padding-left: 62px;
-  padding-right: 62px;
-}
-
-.section-sidebar__wrapper {
+.main-sidebar {
+  padding: 28px 20px;
+  margin-right: 42px;
+  width: 312px;
+  background: $bg-light;
+  box-shadow: $shadow-normal;
+  border-radius: $radius-big;
   display: flex;
   flex-direction: column;
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom:32px;
-  background: linear-gradient(356.2deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
-  background-blend-mode: soft-light, normal;
-  box-shadow: 10px 10px 20px #A6ABBD, -10px -10px 20px #FAFBFF;
-  border-radius: 50px;
 }
 
-.section-sidebar__menu {
+.main-sidebar__menu {
+  width: 100%;
+}
+
+.sidebar-menu__item {
+  width: 100%;
+  padding: 3px;
+}
+
+.sidebar-menu__link {
+  width: 100%;
+  padding: 8px;
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-
-.menu__list {
-  padding: 0;
-  margin: 0;
-}
-
-.menu__item {
-  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
-  padding: 13px;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 28px;
-  line-height: 33px;
-  color: #4F4F4F;
+  align-items: center;
+  border-radius: $radius-normal;
 }
 
-.menu__item:hover {
-  background: linear-gradient(350.28deg, rgba(0, 0, 0, 0.4) 0%, rgba(255, 255, 255, 0.4) 105.18%), #EBECF0;
-  background-blend-mode: soft-light, normal;
-  box-shadow: 5px 5px 10px #A6ABBD, -5px -5px 10px #FAFBFF;
-  border-radius: 20px;
-  cursor: pointer;
+.sidebar-menu__link:hover,
+.sidebar-menu__link.sidebar-menu__link--active {
+  background: $bg-light;
+  box-shadow: $shadow-minimal;
 }
 
-.menu__svg {
-  margin-top: 8px;
-  margin-right: 10px;
+.sidebar-menu__svg {
   width: 20px;
   height: 20px;
 }
 
-.menu__link {
-  width: 80%;
+.sidebar-menu__text {
+  margin-left: 12px;
+  font-size: 28px;
 }
 
-.section-sidebar__statistic {
-  padding: 0;
-  margin: 0;
-  margin-top: 307px;
-}
-
-.statistic__list {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  margin: 0;
-  margin-top: -20px;
-}
-
-.statistic__item {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  font-family: Rubik;
-  font-style: normal;
-  font-weight: normal;
+.main-sidebar__statistic {
+  margin-top: auto;
+  width: 100%;
   font-size: 18px;
-  line-height: 21px;
-  color: #4F4F4F;
 }
 
-.statistic__text {
+.sidebar-statistic__item {
   width: 100%;
+  margin-top: 20px;
 }
 
-.statistic__bar {
-  width: 100%;
+.sidebar-statistic__bar {
   margin-top: 8px;
+  width: 100%;
+  height: 14px;
+  background: $bg-green;
 }
-
 </style>

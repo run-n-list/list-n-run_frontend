@@ -6,8 +6,10 @@
           router-link(:to="{name: 'home'}") Home
         li.main-nav__item
           router-link(:to="{name: 'about'}") About
-    LrSidebar
-    router-view
+    .page-bottom
+      LrSidebar
+      main.page-main
+        router-view
 </template>
 
 <script>
@@ -24,4 +26,33 @@ export default {
 </script>
 
 <style lang="scss">
+body {
+  background: $bg-light;
+  background-blend-mode: $bg-mode;
+}
+
+* {
+  background-blend-mode: inherit;
+}
+
+.inner-page {
+  width: 1316px;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-bottom {
+  flex-grow: 1;
+  display: flex;
+}
+
+.page-main {
+  flex-grow: 1;
+  align-items: stretch;
+}
 </style>
