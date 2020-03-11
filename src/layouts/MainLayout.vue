@@ -16,11 +16,23 @@
 import '@/assets/scss/main.scss'
 import LrNavbar from '../components/LrNavbar'
 import LrSidebar from '../components/LrSidebar'
+import LrDialogs from '../components/LrDialogs'
+import LrFeed from '../components/LrFeed'
+import LrNotes from '../components/LrNotes'
+import LrProjects from '../components/LrProjects'
+import LrStatistics from '../components/LrStatistics'
+import LrTasks from '../components/LrTasks'
 
 export default {
   components: {
     LrNavbar,
-    LrSidebar
+    LrSidebar,
+    LrDialogs,
+    LrFeed,
+    LrNotes,
+    LrProjects,
+    LrStatistics,
+    LrTasks
   }
 }
 </script>

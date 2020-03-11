@@ -2,27 +2,27 @@
   aside.main-sidebar
     ul.main-sidebar__menu.sidebar-menu
       li.sidebar-menu__item
-        a(src="#").sidebar-menu__link.sidebar-menu__link--active
+        router-link(:to="{name: 'tasks'}").sidebar-menu__link.sidebar-menu__link--active
           img.sidebar-menu__svg
           span.sidebar-menu__text Задачи
       li.sidebar-menu__item
-        a(src="#").sidebar-menu__link
+        router-link(:to="{name: 'projects'}").sidebar-menu__link
           img.sidebar-menu__svg
           span.sidebar-menu__text Проекты
       li.sidebar-menu__item
-        a(src="#").sidebar-menu__link
+        router-link(:to="{name: 'notes'}").sidebar-menu__link
           img.sidebar-menu__svg
           span.sidebar-menu__text Заметки
       li.sidebar-menu__item
-        a(src="#").sidebar-menu__link
+        router-link(:to="{name: 'feed'}").sidebar-menu__link
           img.sidebar-menu__svg
           span.sidebar-menu__text Лента
       li.sidebar-menu__item
-        a(src="#").sidebar-menu__link
+        router-link(:to="{name: 'statistics'}").sidebar-menu__link
           img.sidebar-menu__svg
           span.sidebar-menu__text Статистика
       li.sidebar-menu__item
-        a(src="#").sidebar-menu__link
+        router-link(:to="{name: 'dialogs'}").sidebar-menu__link
           img.sidebar-menu__svg
           span.sidebar-menu__text Диалоги
     ul.main-sidebar__statistic.sidebar-statistic
@@ -70,6 +70,7 @@ export default {
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  text-decoration: none;
   border-radius: $radius-normal;
 }
 
