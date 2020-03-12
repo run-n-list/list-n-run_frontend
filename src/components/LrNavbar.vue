@@ -86,11 +86,6 @@ export default {
   margin-right: 14px;
 }
 
-.section-navbar__buttons {
-  padding: 0;
-  margin: 0;
-}
-
 .nav-avatar {
   width: 70px;
   height: 70px;

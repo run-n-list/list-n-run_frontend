@@ -21,32 +21,32 @@ const routes = [
       {
         path: '/dialogs',
         name: 'dialogs',
-        component: () => import('@/components/LrDialogs.vue')
+        component: () => import('@/views/Dialog/DialogsListView.vue')
       },
       {
         path: '/feed',
         name: 'feed',
-        component: () => import('@/components/LrFeed.vue')
+        component: () => import('@/views/Feed/FeedView.vue')
       },
       {
         path: '/notes',
         name: 'notes',
-        component: () => import('@/components/LrNotes.vue')
+        component: () => import('@/views/Note/NotesListView.vue')
       },
       {
         path: '/projects',
         name: 'projects',
-        component: () => import('@/components/LrProjects.vue')
+        component: () => import('@/views/Project/ProjectsListView.vue')
       },
       {
         path: '/statistics',
         name: 'statistics',
-        component: () => import('@/components/LrStatistics.vue')
+        component: () => import('@/views/Statistics/StatisticsListView.vue')
       },
       {
         path: '/tasks',
         name: 'tasks',
-        component: () => import('@/components/LrTasks.vue')
+        component: () => import('@/views/Task/TasksListView.vue')
       }
     ]
   }
