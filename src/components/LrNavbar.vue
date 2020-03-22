@@ -7,13 +7,13 @@
     ul.main-nav__buttons.nav-buttons
       li.nav-buttons__item
         button.btn__message
-          img.btn-icon(
+          img.svg-icon(
             src="@/assets/img/icons/icon/main/Letter.svg"
             alt="Сообщения"
           )
       li.nav-buttons__item
         button.btn__info
-          img.btn-icon(
+          img.svg-icon(
             src="@/assets/img/icons/icon/main/Bell.svg"
             alt="Уведомления"
           )
