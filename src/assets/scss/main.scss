@@ -1,11 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:300,400,400i,500&display=swap&subset=cyrillic');
 
+@import 'functions';
+
 html, body {
   width: 100%;
   min-height: 100vh;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 14px;
 }
 
 * {
@@ -14,7 +17,6 @@ html, body {
 
 body {
   font-weight: 400;
-  font-size: 18px;
   font-family: 'Rubik', sans-serif;
   color: $text-dark;
 }
@@ -26,6 +28,8 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 button {
   border: none;
+  margin: 0;
+  padding: 0;
 }
 
 li {

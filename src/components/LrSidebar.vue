@@ -72,6 +72,7 @@ export default {
   align-items: center;
   text-decoration: none;
   border-radius: $radius-normal;
+  color: $text-dark;
 }
 
 .sidebar-menu__link:hover,
@@ -86,25 +87,25 @@ export default {
 }
 
 .sidebar-menu__text {
-  margin-left: 12px;
-  font-size: 28px;
+  margin-left: px2rem(12);
+  font-size: px2rem(28);
 }
 
 .main-sidebar__statistic {
   margin-top: auto;
   width: 100%;
-  font-size: 18px;
+  font-size: px2rem(18);
 }
 
 .sidebar-statistic__item {
   width: 100%;
-  margin-top: 20px;
+  margin-top: px2rem(20);
 }
 
 .sidebar-statistic__bar {
-  margin-top: 8px;
+  margin-top: px2rem(8);
   width: 100%;
-  height: 14px;
+  height: px2rem(14);
   background: $bg-green;
 }
 </style>

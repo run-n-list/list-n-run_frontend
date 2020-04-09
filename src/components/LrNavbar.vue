@@ -54,18 +54,18 @@ export default {
 .main-nav {
   width: 100%;
   display: flex;
-  padding: 15px 40px;
+  padding: px2rem(10) px2rem(30);
   justify-content: space-between;
   align-items: center;
   background: $bg-light;
   border-radius: $radius-big;
   box-shadow: $shadow-normal;
-  margin-bottom: 28px;
+  margin-bottom: px2rem(28);
 }
 
 .main-nav__logo {
-  width: 70px;
-  height: 70px;
+  width: px2rem(70);
+  height: px2rem(70);
 }
 
 .nav-buttons {
@@ -83,12 +83,12 @@ export default {
 }
 
 .nav-buttons__item {
-  margin-right: 14px;
+  margin-right: px2rem(14);
 }
 
 .nav-avatar {
-  width: 70px;
-  height: 70px;
+  width: px2rem(70);
+  height: px2rem(70);
   position: relative;
   border-radius: $radius-50;
   box-shadow: $shadow-normal;
@@ -100,13 +100,13 @@ export default {
 }
 
 .nav-avatar__img {
-  width: 60px;
-  height: 60px;
+  width: px2rem(60);
+  height: px2rem(60);
 }
 
 .btn__info, .btn__message {
-  width: 46px;
-  height: 46px;
+  width: px2rem(46);
+  height: px2rem(46);
   font-size: 0;
   border-radius: $radius-50;
   box-shadow: $shadow-normal;
@@ -120,8 +120,8 @@ export default {
   flex-direction: column;
   right: 0;
   top: calc(100% + 8px);
-  padding: 38px 32px;
-  font-size: 24px;
+  padding: px2rem(38) px2rem(32);
+  font-size: px2rem(24);
   width: auto;
   border-radius: $radius-big;
   background: $bg-light;
@@ -138,24 +138,24 @@ export default {
 }
 
 .user-nav__item {
-  margin-top: 8px;
+  margin-top: px2rem(8);
   width: auto;
 }
 
 .user-nav__link {
   display: flex;
-  width: 200px;
+  width: px2rem(200);
   flex-wrap: nowrap;
 }
 
 .svg-icon {
-  width: 20px;
-  height: 20px;
+  width: px2rem(20);
+  height: px2rem(20);
 }
 
 .user-nav__text {
   color: $text-dark;
-  margin-left: 8px;
+  margin-left: px2rem(8);
 }
 
 .nav-avatar:hover .user-nav {
